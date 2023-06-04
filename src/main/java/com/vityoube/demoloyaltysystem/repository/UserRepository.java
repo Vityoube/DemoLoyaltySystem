@@ -1,9 +1,8 @@
 package com.vityoube.demoloyaltysystem.repository;
 
-import com.vityoube.demoloyaltysystem.domain.User;
+import com.vityoube.demoloyaltysystem.domain.UserAccount;
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.data.repository.Repository;
 
-public interface UserRepository  extends JpaRepository<Long, User> {
-    User findByUsername(String username);
+public interface UserRepository  extends JpaRepository<UserAccount, Long> {
+    UserAccount findByUsername(String username);
 }
